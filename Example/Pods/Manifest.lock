@@ -1,0 +1,16 @@
+PODS:
+  - JYCPanView (0.1.0)
+
+DEPENDENCIES:
+  - JYCPanView (from `../`)
+
+EXTERNAL SOURCES:
+  JYCPanView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JYCPanView: a1684f8bc68a3fe2d719350e002d1d6659ca3bed
+
+PODFILE CHECKSUM: e70f8e8a1ade11e0210ae31df84cddda720ea334
+
+COCOAPODS: 1.7.4
