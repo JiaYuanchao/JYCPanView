@@ -7,8 +7,10 @@
 //
 
 #import "JYCViewController.h"
-
+#import <JYCPanView-umbrella.h>
 @interface JYCViewController ()
+
+@property (nonatomic, strong) JYCPanView *panView;
 
 @end
 
@@ -18,12 +20,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.panView];
 }
 
-- (void)didReceiveMemoryWarning
+- (JYCPanView *)panView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (!_panView) {
+        _panView = [[JYCPanView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+        _panView.panDerection = JYCPanDerectionVertical;
+        _panView.backgroundColor = [UIColor redColor];
+        _panView.minX = 0;
+        _panView.maxX = 300;
+        _panView.minY = 0;
+        _panView.maxY = 500;
+    }
+    return _panView;
 }
 
 @end
