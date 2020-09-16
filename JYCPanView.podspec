@@ -21,11 +21,11 @@ s.description      = <<-DESC
 TODO: Add long description of the pod here.
 DESC
 
-s.homepage         = 'https://github.com/yuanchao__2106@163.com/JYCPanView'
+s.homepage         = 'https://github.com/JiaYuanchao/JYCPanView'
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'yuanchao__2106@163.com' => 'yuanchao__2106@163.com' }
-s.source           = { :git => 'https://github.com/yuanchao__2106@163.com/JYCPanView.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/JiaYuanchao/JYCPanView.git', :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
 s.ios.deployment_target = '8.0'
