@@ -60,7 +60,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B23DDA954FE73BCCFD5ABE5 /* Pods-JYCPanView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYCPanView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JYCPanView_Tests/Pods-JYCPanView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7E532D92C0B9C0FA95BB621A /* JYCPanView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYCPanView.podspec; path = ../JYCPanView.podspec; sourceTree = "<group>"; };
+		7E532D92C0B9C0FA95BB621A /* JYCPanView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYCPanView.podspec; path = ../JYCPanView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9488F4F1438C7B3D0638C051 /* Pods-JYCPanView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYCPanView_Tests.release.xcconfig"; path = "Target Support Files/Pods-JYCPanView_Tests/Pods-JYCPanView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		954F105DC9A6776A2863AB41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -501,6 +501,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JYCPanView/JYCPanView-Prefix.pch";
 				INFOPLIST_FILE = "JYCPanView/JYCPanView-Info.plist";
+				MARKETING_VERSION = 0.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.JYCPanView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +519,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JYCPanView/JYCPanView-Prefix.pch";
 				INFOPLIST_FILE = "JYCPanView/JYCPanView-Info.plist";
+				MARKETING_VERSION = 0.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.JYCPanView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

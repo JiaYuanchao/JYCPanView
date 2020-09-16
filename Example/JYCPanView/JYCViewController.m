@@ -7,7 +7,7 @@
 //
 
 #import "JYCViewController.h"
-#import <JYCPanView-umbrella.h>
+#import <JYCPanView/JYCPanView.h>
 @interface JYCViewController ()
 
 @property (nonatomic, strong) JYCPanView *panView;
@@ -27,11 +27,13 @@
 {
     if (!_panView) {
         _panView = [[JYCPanView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-        _panView.panDerection = JYCPanDerectionVertical;
+        _panView.panDerection = JYCPanDerectionVertical | JYCPanDerectionHorizontal;
         _panView.backgroundColor = [UIColor redColor];
         _panView.minX = 0;
         _panView.maxX = 300;
+        _panView.midX = 100;
         _panView.minY = 0;
+        _panView.midY = 200;
         _panView.maxY = 500;
     }
     return _panView;

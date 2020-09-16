@@ -23,6 +23,11 @@ typedef NS_ENUM(NSUInteger, JYCPanDerection) {
 
 @property (nonatomic, assign) CGFloat minY;
 
+@property (nonatomic, assign) CGFloat midX;
+
+@property (nonatomic, assign) CGFloat midY;
+
+
 @property (nonatomic, assign) JYCPanDerection panDerection;
 
 @property (nonatomic, copy) void (^customAnimationBlock)(CGRect endRect);

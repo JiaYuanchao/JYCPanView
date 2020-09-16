@@ -147,10 +147,19 @@
 
 - (CGFloat)setEndRectXWithWithViewFrame:(CGRect)viewFrame offset:(CGPoint)offset
 {
+    if (self.midX < self.minX) {
+        self.midX = self.minX;
+    }
+    if (self.midX > self.maxX) {
+        self.midX = self.maxX;
+    }
     CGFloat currentX = viewFrame.origin.x;
-    CGFloat centerX = (self.maxX + self.minX) / 2.0;
-    if (currentX > centerX) {
+    CGFloat largeCenterX = (self.maxX + self.midX) / 2.0;
+    CGFloat smallCenterX = (self.minX + self.midX) / 2.0;
+    if (currentX > largeCenterX) {
         currentX = self.maxX;
+    } else if(currentX <= largeCenterX && currentX >= smallCenterX) {
+        currentX = self.midX;
     } else {
         currentX = self.minX;
     }
@@ -159,10 +168,21 @@
 
 - (CGFloat)setEndRectYWithWithViewFrame:(CGRect)viewFrame offset:(CGPoint)offset
 {
+    
+    if (self.midY < self.minY) {
+        self.midY = self.minY;
+    }
+    if (self.midY > self.maxY) {
+        self.midY = self.maxY;
+    }
+
     CGFloat currentY = viewFrame.origin.y;
-    CGFloat centerY = (self.maxY + self.minY) / 2.0;
-    if (currentY > centerY) {
+    CGFloat largeCenterY = (self.maxY + self.midY) / 2.0;
+    CGFloat smallCenterY = (self.minY + self.midY) / 2.0;
+    if (currentY > largeCenterY) {
         currentY = self.maxY;
+    } else if(currentY >= smallCenterY && currentY <= largeCenterY) {
+        currentY = self.midY;
     } else {
         currentY = self.minY;
     }
